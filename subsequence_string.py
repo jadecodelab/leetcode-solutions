@@ -1,3 +1,4 @@
+# given 2 strings s and t, return true if s is a subsequence of t, or false otherwise
 def is_subsequence(s,t):
     i=j=0
     while i<len(s) and j<len(t):
@@ -6,7 +7,7 @@ def is_subsequence(s,t):
         j+=1
     return i==len(s)
 
-
+# test the function
 s="abc"
 t="arbdvcg"
 l="gmsi"
@@ -20,3 +21,4 @@ if is_subsequence(s,l):
     print("s is subsequence of l")
 else:
     print("s is NOT subsequence of l")
+
